@@ -1,5 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '14.0'  # 适用于 iOS 14.0 及以上设备
+project 'SmartSelfieApp.xcodeproj'
+
 
 target 'SmartSelfieApp' do
   use_frameworks!
