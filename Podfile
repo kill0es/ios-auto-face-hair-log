@@ -1,116 +1,44 @@
-# 指定平台和最低版本
-platform :ios, '14.0'
-
-# 抑制所有 Pod 的警告
-inhibit_all_warnings!
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'  # 适用于 iOS 14.0 及以上设备
 
 target 'SmartSelfieApp' do
-  # 使用框架而非静态库
   use_frameworks!
 
-  # 添加所需的 Pod
-  pod 'Alamofire', '~> 5.4'
-  pod 'SwiftyJSON', '~> 5.0'
-  pod 'SnapKit', '~> 5.0'
-  pod 'RealmSwift', '~> 10.7'
-  pod 'Kingfisher', '~> 7.0'
-  pod 'RxSwift', '~> 6.0'
-  pod 'RxCocoa', '~> 6.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxAlamofire', '~> 6.0'
-  pod 'RxKingfisher', '~> 1.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwiftUtilities', '~> 0.6'
-  pod 'RxViewController', '~> 1.0'
-  pod 'RxKeyboard', '~> 2.0'
-  pod 'RxGesture', '~> 4.0'
-  pod 'RxDataSources', '~> 5.0'
-  pod 'RxRealmDataSources', '~> 0.1'
-  pod 'RxRealmExtensions', '~> 0.1'
-  pod 'RxRealm', '~> 5.0'
-  pod 'RxOptional', '~> 5.0'
-  pod 'RxSwiftExt', '~> 5.0'
-  pod 'RxSwift 
+  # 人脸检测与图像处理
+  pod 'SDWebImage'
+  pod 'SDWebImageWebPCoder'  # 支持 WebP 格式
+  pod 'VisionCamera', :git => 'https://github.com/mrousavy/react-native-vision-camera.git'
+
+  # 机器学习与发型识别
+  pod 'CoreML'
+  pod 'TensorFlowLiteSwift'  # 如果需要更强大的 AI 推理
+  pod 'MLKitFaceDetection'   # Google 的人脸检测 API
+
+  # 视频处理
+  pod 'AVFoundation'
+  pod 'GPUImage2'  # 实时滤镜与图像处理
+
+  # 云端存储与跨平台分享
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+
+  # 社交媒体分享
+  pod 'FacebookShare'
+  pod 'TwitterKit'
+
+  # UI 组件
+  pod 'SnapKit'  # 用于 AutoLayout 适配
+
+  target 'SmartSelfieAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SmartSelfieAppUITests' do
+    inherit! :search_paths
+    # Pods for UI testing
+  end
+
+end
