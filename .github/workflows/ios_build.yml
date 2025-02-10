@@ -28,7 +28,7 @@ jobs:
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '14.2'  # 根据项目要求设置 Xcode 版本
+          xcode-version: '16'  # 根据项目要求设置 Xcode 版本
 
       - name: Build SmartSelfieApp
         run: |
