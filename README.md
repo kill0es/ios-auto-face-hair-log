@@ -93,7 +93,6 @@ SmartSelfieApp/
 pod install
 
    ```
-
 	4.	运行项目
 在 Xcode 中选择目标设备（模拟器或真机），然后编译并运行。
 
@@ -142,7 +141,7 @@ jobs:
                      -configuration Release \
                      clean build
 
-   ```bash
+   ```
 贡献
 
 欢迎提交 Issue 与 Pull Request 改进项目。如需讨论或改进方案，请遵循代码风格并附上详细注释。
